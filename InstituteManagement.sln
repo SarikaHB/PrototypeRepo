@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstituteManagement.Api", "InstituteManagement.Api\InstituteManagement.Api.csproj", "{F4FDF67F-9A55-4348-9DA1-81121CE8D741}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{396909B7-8DA3-45F8-98D2-4DD0FACAFB82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Test", "0.Test", "{5F13B488-0700-454B-93F4-DA0B65C69D7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Domain", "2.Domain", "{D8A35610-4D68-4886-BC5F-C896AB99B525}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.DataAccess", "3.DataAccess", "{06612FEC-FBDA-4B89-B8EF-903895087FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstituteManagement.Domain", "InstituteManagement.Domain\InstituteManagement.Domain.csproj", "{85FD2F46-5AD3-4E5B-AB71-8D59AC6846B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstituteManagement.DataAccess.Sql", "InstituteManagement.DataAccess.Sql\InstituteManagement.DataAccess.Sql.csproj", "{B2B26432-0AE1-4DA4-9084-D87AEA8CA7E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstitueManagement.DataAccess.MongoDb", "InstitueManagement.DataAccess.MongoDb\InstitueManagement.DataAccess.MongoDb.csproj", "{BCC47C7D-03A8-47D0-AE5B-B84AD1E347A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstituteManagement.Tests", "InstituteManagement.Tests\InstituteManagement.Tests.csproj", "{0DEDFD23-13AC-4735-95E0-3702C1EE3E25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4FDF67F-9A55-4348-9DA1-81121CE8D741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FDF67F-9A55-4348-9DA1-81121CE8D741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FDF67F-9A55-4348-9DA1-81121CE8D741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FDF67F-9A55-4348-9DA1-81121CE8D741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FD2F46-5AD3-4E5B-AB71-8D59AC6846B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FD2F46-5AD3-4E5B-AB71-8D59AC6846B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FD2F46-5AD3-4E5B-AB71-8D59AC6846B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FD2F46-5AD3-4E5B-AB71-8D59AC6846B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B26432-0AE1-4DA4-9084-D87AEA8CA7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B26432-0AE1-4DA4-9084-D87AEA8CA7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B26432-0AE1-4DA4-9084-D87AEA8CA7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B26432-0AE1-4DA4-9084-D87AEA8CA7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC47C7D-03A8-47D0-AE5B-B84AD1E347A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC47C7D-03A8-47D0-AE5B-B84AD1E347A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC47C7D-03A8-47D0-AE5B-B84AD1E347A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC47C7D-03A8-47D0-AE5B-B84AD1E347A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DEDFD23-13AC-4735-95E0-3702C1EE3E25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DEDFD23-13AC-4735-95E0-3702C1EE3E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DEDFD23-13AC-4735-95E0-3702C1EE3E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DEDFD23-13AC-4735-95E0-3702C1EE3E25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F4FDF67F-9A55-4348-9DA1-81121CE8D741} = {396909B7-8DA3-45F8-98D2-4DD0FACAFB82}
+		{85FD2F46-5AD3-4E5B-AB71-8D59AC6846B4} = {D8A35610-4D68-4886-BC5F-C896AB99B525}
+		{B2B26432-0AE1-4DA4-9084-D87AEA8CA7E7} = {06612FEC-FBDA-4B89-B8EF-903895087FE4}
+		{BCC47C7D-03A8-47D0-AE5B-B84AD1E347A1} = {06612FEC-FBDA-4B89-B8EF-903895087FE4}
+		{0DEDFD23-13AC-4735-95E0-3702C1EE3E25} = {5F13B488-0700-454B-93F4-DA0B65C69D7F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30DC3CDD-CE12-4720-8F74-0B67403E8637}
+	EndGlobalSection
+EndGlobal

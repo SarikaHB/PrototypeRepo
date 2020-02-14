@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Logics\" />
-    <Folder Include="Models\" />
+    <ProjectReference Include="..\InstitueManagement.DataAccess.MongoDb\InstitueManagement.DataAccess.MongoDb.csproj" />
   </ItemGroup>
 
 </Project>

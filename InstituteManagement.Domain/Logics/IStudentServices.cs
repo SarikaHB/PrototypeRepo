@@ -5,7 +5,7 @@ namespace InstituteManagement.Domain.Logics
 {
     public interface IStudentServices
     {
-        IList<IStudent> GetStudents();
-        IStudent GetStudentById(int id);
+        IList<IStudentDTO> GetStudents();
+        IStudentDTO GetStudentById(int id);
     }
 }

@@ -1,6 +1,6 @@
-﻿namespace InstituteManagement.Domain.Models
+﻿namespace InstituteManagement.DataAccess.Sql.Models
 {
-    public class Student : IStudent
+    public class Student
     {
         public int StudentId { get; set; }
         public string StudentName { get; set; }

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\InstitueManagement.DataAccess.MongoDb\InstitueManagement.DataAccess.MongoDb.csproj" />
+    <ProjectReference Include="..\InstituteManagement.DataAccess.Sql\InstituteManagement.DataAccess.Sql.csproj" />
   </ItemGroup>
 
 </Project>

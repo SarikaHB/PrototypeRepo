@@ -22,7 +22,7 @@ namespace InstituteManagement.Api.Controllers
             try
             {
                 var students = _studentServices.GetStudents();
-                return Ok();
+                return Ok(students);
             }
             catch (Exception ex)
             {

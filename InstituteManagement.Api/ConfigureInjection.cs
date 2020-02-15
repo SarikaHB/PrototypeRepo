@@ -1,4 +1,5 @@
 ﻿using InstitueManagement.DataAccess.MongoDb.Repository;
+using InstituteManagement.DataAccess.Sql.Repository;
 using InstituteManagement.Domain.Logics;
 using Microsoft.Extensions.DependencyInjection;
 

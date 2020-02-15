@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace InstitueManagement.DataAccess.MongoDb.Repository
 {
-    public class StudentRepository : IStudentRepository
-    {
+    public class StudentMongoRepository : IStudentMongoRepository
+    { 
         public IStudentData GetStudentDataById(int id)
         {
             throw new System.NotImplementedException();

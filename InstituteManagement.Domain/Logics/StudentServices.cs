@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
-using InstitueManagement.DataAccess.MongoDb.Repository;
+﻿using InstituteManagement.DataAccess.Sql.Models;
+using InstituteManagement.DataAccess.Sql.Repository;
 using InstituteManagement.Domain.Models;
+using System.Collections.Generic;
 
 namespace InstituteManagement.Domain.Logics
 {
@@ -13,16 +14,35 @@ namespace InstituteManagement.Domain.Logics
             _studentRepository = studentRepository;
         }
 
-        public IStudent GetStudentById(int id)
+        public IStudentDTO GetStudentById(int id)
         {
-            var student = _studentRepository.GetStudentDataById(id);
+            var student = _studentRepository.GetStudentById(id);
             return null;
         }
 
-        public IList<IStudent> GetStudents()
+        public IList<IStudentDTO> GetStudents()
         {
-            var students = _studentRepository.GetStudentDatas();
-            return null;
+            var students = _studentRepository.GetStudents();
+            return Map_StudentToStudentDTO(students);
+        }
+
+        private IList<IStudentDTO> Map_StudentToStudentDTO(IList<Student> students)
+        {
+            if (students == null)
+            {
+                return new List<IStudentDTO>();
+            }
+            IList<IStudentDTO> studentDTOs = new List<IStudentDTO>();
+            foreach (var student in students)
+            {
+                studentDTOs.Add(new StudentDTO
+                {
+                    StudentId = student.StudentId,
+                    StudentName = student.StudentName,
+                    Age = student.Age
+                });
+            }
+            return studentDTOs;
         }
     }
 }

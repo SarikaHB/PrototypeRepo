@@ -37,8 +37,8 @@ namespace InstituteManagement.Api.Controllers
         {
             try
             {
-                var students = _studentServices.GetStudentById(id);
-                return Ok();
+                var student = _studentServices.GetStudentById(id);
+                return Ok(student);
             }
             catch (Exception ex)
             {
